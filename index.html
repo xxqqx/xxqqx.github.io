@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>LXX's site</title>
+    <style type="text/css">
+        html {
+            position: relative;
+        }
+
+        .top {
+            background-color: #4f95a6;
+            height: 60px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .top h1 {
+            padding-left: 150px;
+            font-family: "华文新魏";
+        }
+
+        .top-left {
+            width: 250px;
+            height: 50px;
+            display: inline-block;
+        }
+
+        .top-left span {
+            position: absolute;
+            top: 15px;
+            left: 250px;
+            font-family: "华文新魏";
+            font-size: 28px;
+            color: pink;
+            float: left;
+            display: none;
+        }
+
+        .top-left:hover span {
+            display: block;
+        }
+
+        .top1 {
+            color: aliceblue;
+            display: inline-block;
+            margin-left: 470px;
+        }
+
+        .top2 {
+            color: aliceblue;
+            display: inline-block;
+            margin-left: 205px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: orange;
+        }
+
+        a:active {
+            text-decoration: line-through;
+            color: cadetblue;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 0px;
+            right: 30px;
+            padding: 20px;
+            font-family: "华文新魏";
+            font-size: 20px;
+        }
+
+        .top img {
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            position: absolute;
+            top: 5px;
+            right: 0px;
+        }
+
+        .top-right1 {
+            position: absolute;
+            top: -4px;
+            right: -150px;
+            padding: 20px;
+        }
+
+        .top-right1 input {
+            font-family: "华文新魏";
+            font-size: 20px;
+            border-radius: 8px;
+        }
+
+        .main {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-image: url(img/9.JPG);
+            background-repeat: no-repeat;
+            background-position: -75px -852px;
+            background-attachment: fixed;
+            width: 100%;
+            height: 1141px;
+        }
+
+        .main-left h1 {
+            position: absolute;
+            left: 50px;
+            top: 11px;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: "幼圆";
+            color: white;
+        }
+
+        .main-left h3 {
+            position: absolute;
+            left: 50px;
+            top: 116px;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: "幼圆";
+            color: white;
+        }
+
+        .center-left {
+            position: absolute;
+            top: 30px;
+            left: 550px;
+            width: 250px;
+            height: 514px;
+            border: 3px solid white;
+            border-radius: 20px;
+            background-color: white;
+            opacity: 0.8;
+        }
+
+        .center-left img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            position: absolute;
+            top: 5px;
+            left: 75px;
+        }
+
+        .center-left #name {
+            position: absolute;
+            top: 110px;
+            left: 75px;
+            text-align: center;
+            font-family: "华文新魏";
+            font-size: 17px;
+        }
+
+        .span ul {
+            position: absolute;
+            top: 200px;
+            left: 510px;
+            width: 250px;
+            height: 680px;
+        }
+
+        .span li {
+            line-height: 111px;
+            list-style-type: none;
+        }
+
+        .pane {
+            width: 256px;
+            text-align: center;
+            font-family: "华文新魏";
+            font-size: 20px;
+        }
+
+        .pane:hover {
+            background-color: white;
+        }
+
+        .pane1 {
+            width: 256px;
+            height: 114px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            text-align: center;
+            font-family: "华文新魏";
+            font-size: 20px;
+        }
+
+        .pane1:hover {
+            background-color: white;
+        }
+
+        .center {
+            position: absolute;
+            top: 30px;
+            left: 820px;
+            width: 243px;
+            height: 518px;
+            border: 3px solid whitborder-radius: 20px;
+            background: rgba(250, 250, 250, 0.8);
+        }
+
+        .center-right {
+            position: absolute;
+            top: 30px;
+            left: 1064px;
+            width: 415px;
+            height: 518px;
+            color: black;
+            font-size: 35px;
+            font-weight: bold;
+            font-family: 幼圆;
+            line-height: 52px;
+            background: white;
+            opacity: 0.5;
+        }
+
+        .right-down {
+            position: absolute;
+            top: 634px;
+            left: 951px;
+            background-color: #fff;
+            width: 476px;
+            height: 476px;
+        }
+
+        .center iframe {
+            border-radius: 20px;
+        }
+
+        #showtime1 {
+            position: absolute;
+            left: 30px;
+            bottom: 20px;
+
+            font-size: 28px;
+            font-weight: bold;
+            font-family: "华文新魏";
+        }
+
+        #countdown {
+            position: absolute;
+            left: 40px;
+            bottom: -15px;
+
+            font-size: 25px;
+            font-weight: bold;
+            font-family: "华文新魏";
+        }
+
+        .time {
+            position: absolute;
+            right: 30px;
+            bottom: 5px;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: "华文新魏";
+            background: white;
+            opacity: 0.5;
+        }
+
+        .bottom {
+            position: absolute;
+            top: 1110px;
+            width: 100%;
+            height: 85px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="top-left">
+            <h1>多想想</h1>
+            <span>风止于秋水，我止于你💗</span>
+        </div>
+        <div class="top1" href="#">想</div>
+        <div class="top2" href="#">L</div>
+        <div class="top2" href="#">X</div>
+        <div class="top2" href="#">X</div>
+    </div>
+    <div class="main">
+        <div class="main-left">
+            <h1>欢迎来到lxx的世界！<br />Welcome to LXX's world!</h1>
+            <h3>Fake it until you make it<br />Today, we still have to refuel!</h3>
+            <div style="height: 288px; width: 288px; position: absolute; top: 224px; left: 120px;">
+                <img src="img/4.png" style="height: 288px; width: 288px;">
+            </div>
+            <div style="height: 451px; width: 335px; position: absolute; top: 576px; left: 92px;">
+                <img src="img/11.JPG" style="height: 451px; width: 335px;">
+            </div>
+        </div>
+        <div class="main-center">
+            <div class="center-left">
+                <a href="#" target="frame"><img src="img/3.png" alt="头像" title="头像" /></a>
+                <span id="name">xx<br />可能还是小孩</span>
+            </div>
+        </div>
+        <div class="span">
+            <ul>
+                <li class="pane"><a href="#" target="frame">对</a></li>
+                <li class="pane"><a href="#" target="frame">不</a></li>
+                <li class="pane"><a href="#" target="frame">起</a></li>
+        </div>
+        <div class="center">
+            <img src="img/10.JPG" style="background-position: 50px 50px; background-repeat: no-repeat;" width="243px"
+                height="518px" frameborder="0" scrolling="yes" name="frame"></img>
+        </div>
+        <div class="center-right">
+            如果不是遇见你
+            <br>我不可能相信
+            <br>生命有一种一定
+            <br>一定要爱下去
+            <br>爱可以相知相命
+            <br>相依为命
+            <br>爱可以心有灵犀
+            <br>动魄惊心
+            <br>还有梦能紧紧抱着你
+            <br>冥冥中明明是你
+        </div>
+    </div>
+    <div class="right-down">
+        <img src="img/7.png" style="width: 476px; height: 476px;">
+    </div>
+    <div class="bottom">
+        <p id="showtime1" title="我们的征途是星辰大海">xx生日还有：</p>
+        <p id="countdown"></p>
+        <script>
+            function updateCountdown() {
+                var currentDate = new Date();
+                var targetDate = new Date(currentDate.getFullYear(), 7, 26); // 月份从 0 开始计数
+
+                // 检查当前日期是否已经过了目标日期
+                if (currentDate > targetDate) {
+                    // 增加一年，以便计算下一次生日的日期
+                    targetDate.setFullYear(targetDate.getFullYear() + 1);
+                }
+
+                var timeDiff = targetDate - currentDate;
+
+                // 计算剩余的天、小时、分钟和秒
+                var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+                // 更新页面上的倒计时显示
+                document.getElementById("countdown").innerHTML =
+                    days + " 天 " + hours + " 小时 " + minutes + " 分钟 " + seconds + " 秒";
+            }
+
+            // 每秒钟更新一次倒计时
+            setInterval(updateCountdown, 1000);
+        </script>
+        <div class="time">
+            <script>
+                document.write("<span id=time></span>")
+                setInterval("time.innerText=new Date().toLocaleString()", 1000)
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
